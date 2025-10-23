@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@keyframes parallaxUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes parallaxDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.motion-safe\:animate-parallaxUp {
+  animation: parallaxUp 6s ease-in-out infinite;
+}
+
+.motion-safe\:animate-parallaxDown {
+  animation: parallaxDown 6s ease-in-out infinite;
+}
